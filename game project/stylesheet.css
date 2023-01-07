@@ -1,0 +1,98 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.sky, .grass, .road{
+    position: relative;
+}
+.sky{
+    background-color: skyblue;
+    height: 55%;
+}
+.cloud{
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    opacity: 90%;
+}
+.grass{
+    height: 15%;
+    width: 100%;
+    background-color: green;
+
+}
+.road{
+    height: 30%;
+    width: 100%;
+    background-color: #846870;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    box-sizing: border-box;
+}
+ .divider{
+   border: 3px dashed white;
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   box-sizing: border-box;
+   
+
+} 
+.car1{
+    height: 75%;
+    position: absolute;
+    top: -35px;
+    animation-name: Car1;
+    animation-duration: 3s;
+}
+.car2{
+    height: 75%;
+    position: absolute;
+    top: 60px;
+    animation-name: Car2;
+    animation-duration: 1s;
+
+
+}
+.box{
+    border: 1px solid black;
+    width: 400px;
+    padding: 15px;
+    height: auto;
+    background-color: blue;
+    position: relative;
+    left: 60%;
+    top: 25%;
+    text-align: justify;
+
+}
+
+.box:hover{
+    
+     transform: translatey(50px);
+     /* transform: scale(5,5); */
+     /* transform: rotateZ(45deg); */
+     transition: 5s;
+     background: red;
+     
+   
+}
+@keyframes Car1{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1200px);
+    }
+}
+@keyframes Car2{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1200px);
+    }
+}
